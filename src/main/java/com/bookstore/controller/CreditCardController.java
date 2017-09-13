@@ -23,39 +23,14 @@ import com.bookstore.utility.USConstants;
 @Controller
 public class CreditCardController {
 
-//	@Autowired
-//	private JavaMailSender mailSender;
-//	
-//	@Autowired
-//	private MailConstructor mailConstructor;
 	
 	@Autowired
 	private UserService userService;
 
-//	@Autowired
-//	private CartItemService cartItemService;
-	
-//	@Autowired
-//	private ShoppingCartService shoppingCartService;
-//
-//	@Autowired
-//	private ShippingAddressService shippingAddressService;
-//
-//	@Autowired
-//	private BillingAddressService billingAddressService;
-//
-//	@Autowired
-//	private PaymentService paymentService;
-//
-//	@Autowired
-//	private UserShippingService userShippingService;
-
 	@Autowired
 	private UserPaymentService userPaymentService;
 	
-//	@Autowired
-//	private OrderService orderService;
-	
+
 	@RequestMapping("/listOfCreditCards")
 	public String listOfCreditCards(
 			Model model, Principal principal, HttpServletRequest request
